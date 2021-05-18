@@ -5,11 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>cards_gameboard</artifactId>
+    <artifactId>cards</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>card-model</module>
         <module>cards-rest</module>
+        <module>cards-domain</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -25,6 +26,23 @@
                 <artifactId>junit-jupiter</artifactId>
                 <version>5.8.0-M1</version>
             </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>cards-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>cards-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>card-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 </project>
