@@ -1,18 +1,12 @@
 package org.example.colors.mapper;
 
+import org.example.constants.Constants;
+
 public class ColorCardMapper {
     public String mapColor(int colorIndex) {
-        switch (colorIndex) {
-            case 0:
-                return "carreaux";
-            case 1:
-                return "coeur";
-            case 2:
-                return "pique";
-            case 3:
-                return "trefle";
-            default:
-                return "";
+        if (colorIndex > Constants.CARD_COLORS.length) {
+            return "";
         }
+        return Constants.CARD_COLORS[colorIndex];
     }
 }

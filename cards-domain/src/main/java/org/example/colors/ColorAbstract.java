@@ -1,12 +1,11 @@
 package org.example.colors;
 
-import java.util.Arrays;
-import java.util.List;
+import org.example.constants.Constants;
 
 public class ColorAbstract {
-    private final List<String> ColorList = Arrays.asList("carreaux", "coeur", "pique", "trefle");
+    private final String[] ColorList = Constants.CARD_COLORS;
 
-    public List<String> getColorList() {
+    public String[] getColorList() {
         return ColorList;
     }
 }
